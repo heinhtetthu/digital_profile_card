@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 500px;
+  background-color: #fff;
+  border: none; /* Remove the border */
+  position: relative;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); /* Add a realistic drop shadow */
+}
+
+.cover-photo {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 0;
+  padding-bottom: 38.2%; /* 191/500*100 */
+  overflow: hidden;
+}
+
+.cover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile {
+  position: relative;
+}
+
+.profile-overlay {
+  position: absolute;
+  bottom: -70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+
+.company-logo {
+  position: absolute;
+  bottom: 33px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  background-color: #fff; /* Replace with your desired color */
+}
+
+.contact-info {
+  margin-top: 70px;
+}
+
+.name {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 620;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px; /* Adjust the margin-bottom value as desired */
+}
+
+.position {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 580;
+  font-size: 17px;
+  line-height: 1.43;
+  text-align: center;
+  color: #656565;
+  word-break: break-word;
+  margin: 0; /* Remove the previous margin declaration */
+  margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
+}
+
+.company {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.43;
+  text-align: center;
+  color: #818181;
+  word-break: break-word;
+  margin-bottom: 10px; /* Adjust the margin-bottom value as desired */
+  margin-top: 2px; /* Adjust the margin-top value as desired */
+}
+
+.bio {
+  margin: 20px 0; /* Adjust the margin value to control the spacing above and below */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.43;
+  color: #656565;
+  text-align: center;
+  white-space: pre-line;
+  word-break: break-word;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 22px 0px;
+}
+
+.capsule-button {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: #000;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 100px;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.4;
+  padding: 20px 96px;
+  text-transform: capitalize;
+  width: fit-content;
+  margin: 0 auto;
+  letter-spacing: 0.8px;
+}
+
+.links {
+  list-style: none;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Wrap the links to a new line */
+}
+
+.links li {
+  margin: 10px;
+}
+
+.links li a {
+  text-decoration: none; /* Remove the underline */
+}
+
+.links li img {
+  width: 80px; /* Increase the width */
+  height: 80px; /* Increase the height */
+  margin: 0px 8px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 20px; /* Add border-radius for rounded corners */
+  object-fit: cover;
+  object-position: center;
+}
+
+.link-text {
+  text-align: center;
+  margin-top: 0px;
+  font-size: 12px; /* Adjust the font size as needed */
+  font-weight: 300; /* Set the font weight to a thinner value */
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  color: rgb(28, 28, 28); /* Set the color of the link text */
+}
